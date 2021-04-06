@@ -10,8 +10,8 @@
       <img class="page-header__logo-image" src="img/logotype.mobile.svg" width="74" height="30" alt="PINK">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden"> Открыть меню</span> </button>
-      <div class="main-nav--wrapper">
+      <button class="main-nav__button" type="button"><span class="visually-hidden"> Открыть меню</span> </button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site_list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -37,29 +37,22 @@
 
     <section class="stats">
       <div class="stats__wrapper">
-        <header class="stats__header">
+        <div class="stats__header">
           <h2 class="visually-hidden">
             Статистика приложения
           </h2>
-          <p class="stats_slogan">
-            Взгляните<br>на жизнь<br>
-            иначе!</p>
+          <h2 class="stats__slogan">
+            Взгляни на жизнь иначе!</h2>
           <a class="stats__picture">
-            <img class="" src="img/phone.svg" width="320" height="286" alt="Phone">
+            <img class="" src="img/phone.png" width="320" height="286" alt="Phone">
             <img class="" src="img/screen.png" width="111" height="197" alt="Screen">
           </a>
-        </header>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Скачать приложение</span> </button>
+        </div>
+        <button class="stats__button" type="button"><span class="visually-hidden">Скачать приложение</span> </button>
         <div class="stats__item">
-          <a class="stats__icon">
-            <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
-          </a>
-          <a class="stats__icon">
-            <img src="img/android-logo.svg" width="43" height="47" alt="Android">
-          </a>
-          <a class="stats__icon">
-            <img src="img/microsoft-logo.svg" width="44" height="41" alt="Microsoft">
-          </a>
+          <a class="stats__icon-apple" href="https://www.apple.com/ru/app-store/">Apple</a>
+          <a class="stats__icon-android" href="https://www.android.com/intl/ru_ru/">Android</a>
+          <a class="stats__icon-microsoft" href="https://www.microsoft.com/ru-ru/windows">Microsoft</a>
           <p class="stats__available">Доступно для iPhone, iPad, Android,<br>
             Windows Phone, OS X, Windows 8</p>
         </div>
@@ -68,8 +61,7 @@
 
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+        <h2 class="advantages__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -90,8 +82,8 @@
     </section>
 
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__author-info">
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир<br>и позволило по-новому взглянуть на<br>привычные серые вещи! А еще я<br>познакомился со своей будущей женой<br>в комментариях к выложенной<br>фотографии!»</p>
@@ -147,8 +139,8 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <h3 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h3>
+      <div class="page-footer__contacts">
+        <h2 class="contacts__subtitle">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <ul class="contact__text">
           <li class="contact__text text">
             <h3 class="subtitle__text">Звоните:</h3>
@@ -156,7 +148,7 @@
           </li>
           <li class="contact__text text">
             <h3 class="subtitle__text">Пишите:</h3>
-            <a class="contacts__phone">mail@htmlacademy.ru</a>
+            <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
           </li>
           <li class="contact__text text">
             <h3 class="subtitle__text">Приезжайте в гости:</h3>
