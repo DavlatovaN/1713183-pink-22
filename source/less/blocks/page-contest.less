@@ -1,0 +1,42 @@
+.page-contest__title-wrapper {
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: image-size("../img/back-desktop.jpg");
+  padding: 100px 0 75px;
+}
+
+
+.page-contest__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 69px;
+  }
+}
+
+.page-contest__promo {
+  background-color: @white;
+  padding: 55px 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: @dark-table;
+
+  @media (min-width: @tablet-width) {
+    padding: 100px 30px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 0;
+  }
+}
