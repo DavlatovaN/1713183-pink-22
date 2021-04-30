@@ -1,0 +1,21 @@
+.gallery {
+  background-color: @white;
+  width: 100%;
+  min-width: @mobile-width;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+.gallery__photo-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
