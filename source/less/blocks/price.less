@@ -1,12 +1,35 @@
 .price {
+  background-color: @grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 25px;
+  background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
   text-transform: uppercase;
-  padding: 160px 20px 50px;
+  padding: 125px 0 60px;
   box-sizing: border-box;
-  background-image: url("../img/background.jpg");
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 115px 20px 70px;
+    background-size: 100% 50px;
+    margin: 0 auto 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 10px 100px;
+    background-size: 100% 80px;
+    margin: 0 auto 75px;
+  }
 }
 
 .price__slider {
-  margin: 0 auto 45px;
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.price__controls {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
