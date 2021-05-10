@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
   }
-
   @media (min-width: @desktop-width) {
     flex-flow: row wrap;
   }
@@ -11,8 +10,7 @@
 
 .form-feedback__name-wrapper {
   background-color: @white;
-  padding: 5px 0 45px;
-
+  padding: 5px 0px 45px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -24,7 +22,9 @@
     width: 435px;
   }
 }
-
+.form-feedback__list-platform{
+  list-style: none;
+}
 .form-feedback__fieldset {
   border: none;
   padding: 0;
@@ -92,6 +92,7 @@
 }
 
 .form-feedback__list {
+  list-style: none;
 
 
   &--contacts {
@@ -139,6 +140,7 @@
         background-position: center;
       }
     }
+
     @media (min-width: @desktop-width) {
       margin-bottom: 0;
       width: 375px;
@@ -146,11 +148,11 @@
   }
 
   &--phone::after {
-    background-image: url("../img/phone-icon.svg");
+    background-image: url("../img/phone.svg");
   }
 
   &--email::after {
-    background-image: url("../img/mail-icon.svg");
+    background-image: url("../img/mail.svg");
   }
 }
 
@@ -220,6 +222,7 @@
     margin-left: 0;
     margin-right: 0;
   }
+
   @media (min-width: @desktop-width) {
     width: 100%;
   }
@@ -290,11 +293,9 @@
   }
 }
 
-.form-feedback__list-achievements,
-.form-feedback__list-platform {
-}
-
 .form-feedback__list-achievements {
+  list-style: none;
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -361,7 +362,7 @@
 }
 
 .form-feedback__contacts-wrapper {
-  padding: 40px 0 45px;
+  padding: 40px 0px 45px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -455,7 +456,7 @@
 
 .form-feedback__emotions-wrapper {
   background-color: @white;
-  padding: 40px 0 50px;
+  padding: 40px 0px 50px;
 
   @media (min-width: @tablet-width) {
     order: 4;
@@ -497,7 +498,7 @@
 }
 
 .form-feedback__submit-wrapper {
-  padding: 5px 0 25px;
+  padding: 5px 0px 25px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -505,7 +506,7 @@
     justify-content: space-between;
     align-items: center;
     order: 5;
-    margin: 0 auto 50px;
+    margin-bottom: 0 auto 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -534,13 +535,13 @@
 
   &:hover,
   &:focus {
-    background-color: ;
+    background-color: @green-hover;
     outline: none;
   }
 
   &:active {
-    background-color:;
-    color:;
+    background-color: @green-hover;
+    color: @white-dark;
     outline: none;
   }
 

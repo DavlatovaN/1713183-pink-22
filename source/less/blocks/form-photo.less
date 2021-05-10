@@ -1,4 +1,3 @@
-
 .form-photo {
   box-sizing: border-box;
 
@@ -9,13 +8,40 @@
 }
 
 .form-photo__image {
-  background-image: url("../img/photo-mob.jpg");
+  background-image: url("../img/photo-label-mobile.jpg");
   background-repeat: no-repeat;
   cursor: pointer;
-  background-size: image-size("../img/photo-mob.jpg");
+  background-size: image-size("../img/photo-label-mobile.jpg");
   width: 280px;
   height: 375px;
   display: block;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-label-mobile@2x.jpg");
+    background-size: image-size("../img/photo-label-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-label-tablet.jpg");
+    background-size: image-size("../img/photo-label-tablet.jpg");
+    width: 300px;
+    height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..img/photo-label-tablet@2x.jpg");
+      background-size: image-size("../img/photo-label-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo-label-desktop.jpg");
+    background-size: image-size("../img/photo-label-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-label-desktop@2x.jpg");
+      background-size: image-size("../img/photo-label-desktop@2x.jpg");
+    }
+  }
 }
 
 .form-photo__controls {
@@ -33,7 +59,7 @@
 }
 
 .form-photo__filters {
-  padding: 40px 20px;
+  padding: 40px 20px 43px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
@@ -41,7 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 150px;
+    margin-bottom: 140px;
   }
 }
 
@@ -60,7 +86,7 @@
   pointer-events: none;
 
   & path {
-    fill:;
+    fill: @gray-icon;
   }
 
   &--crop {
@@ -115,6 +141,7 @@
   @media (min-width: @desktop-width) {
     width: 48px;
     height: 48px;
+    margin-right: 40px;
   }
 
   & .form-photo__icon path {
@@ -142,41 +169,36 @@
   &:not(&--current):hover,
   &:not(&--current):focus {
     & .form-photo__icon path {
-      fill:;
+      fill: @gray-dark-icon;
     }
   }
 }
 
-.form-photo__filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0;
-  width: 48px;
-  height: 48px;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
+.form-photo__filter-range {
+  position: relative;
+  margin: 0;
+}
 
-  &--current .form-photo__icon path {
-    fill: @pink;
+.form-photo__bar {
+  width: 240px;
+  height: 2px;
+  background: @dark-table;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    margin-top: 0;
   }
 
-  &:not(&--current):hover,
-  &:not(&--current):focus {
-    & .form-photo__icon path {
-      fill: ;
-    }
+  @media (min-width: @desktop-width) {
+    width: 290px;
   }
 }
 
 .form-photo__toggle {
   position: absolute;
   top: -8px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   padding: 0;
   cursor: pointer;
   border: 2px solid @pink;
@@ -190,9 +212,11 @@
 
   &--crop {
     left: 195px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
       left: 165px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -202,9 +226,11 @@
 
   &--fill {
     left: 60px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
       left: 30px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -214,9 +240,11 @@
 
   &--contrast {
     left: 120px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
-      left: 104px;
+      left: 95px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -229,7 +257,7 @@
   position: relative;
   display: none;
   align-items: center;
-  height: 70px;
+  height: 73px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -270,7 +298,8 @@
 
 .form-photo__button-photo {
   width: 280px;
-  padding: 20px 90px;
+  height: 55px;
+  padding: 15px 90px;
   box-sizing: border-box;
   border-radius: 30px;
   font-weight: 700;
@@ -280,6 +309,7 @@
   margin: 0 auto;
   display: block;
   outline: none;
+
   @media (min-width: @tablet-width) {
     width: 260px;
     height: 55px;
@@ -306,7 +336,7 @@
 
     &:active {
       background-color: @pink;
-      color:;
+      color: @white-dark;
       border: none;
     }
   }
@@ -317,14 +347,14 @@
 
     &:hover,
     &:focus {
-      border: 3px solid;
-      color: ;
+      border: 3px solid @gray-dark;
+      color: @gray-dark;
     }
 
     &:active {
       border: none;
-      background-color: ;
-      color:;
+      background-color: @gray-dark;
+      color: @white-dark;
     }
   }
 
