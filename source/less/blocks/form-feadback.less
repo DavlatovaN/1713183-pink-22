@@ -10,21 +10,20 @@
 
 .form-feedback__name-wrapper {
   background-color: @white;
-  padding: 5px 0px 45px;
+  padding: 5px 0 45px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 5px 0 0;
     width: 435px;
+    margin-bottom: 60px;
   }
 }
-.form-feedback__list-platform{
-  list-style: none;
-}
+
 .form-feedback__fieldset {
   border: none;
   padding: 0;
@@ -52,7 +51,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 50px 60px 10px;
+      padding: 50px 5px 0 60px;
     }
   }
 
@@ -67,11 +66,34 @@
   }
 
   &--platform {
+    padding-top: 40px;
+    padding-bottom: 40spx;
+
+    @media (min-width: @tablet-width) {
+      padding: 55px 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 55px 5px 0 60px;
+      width: auto;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: @tablet-width) {
+      padding: 50px 60px 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 45px 60px 15px;
+    }
+  }
+  &--platform {
     padding-top: 35px;
     padding-bottom: 35px;
 
     @media (min-width: @tablet-width) {
-      padding: 55px 60px 50px;
+      padding: 55px 60px;
     }
 
     @media (min-width: @desktop-width) {
@@ -82,11 +104,11 @@
 
   &--emotions {
     @media (min-width: @tablet-width) {
-      padding: 45px 55px 50px;
+      padding: 45px 55px 40px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 45px 40px 45px;
+      padding: 45px 55px 30px;
     }
   }
 }
@@ -104,17 +126,17 @@
 }
 
 .form-feedback__name-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   &:last-child {
@@ -163,7 +185,7 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-bottom: 5px;
   display: block;
 
@@ -210,7 +232,7 @@
 
 .form-feedback__achievements-wrapper {
   background-color: @grey;
-  padding: 40px 20px 45px;
+  padding: 40px 20px 10px;
   margin-left: -20px;
   margin-right: -20px;
 
@@ -225,6 +247,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    margin-bottom: 55px;
   }
 }
 
@@ -240,15 +263,15 @@
   text-align: center;
 
   &--achievements {
-    margin-bottom: 45px;
+    /*margin-bottom: 5px;*/
   }
 
   &--platform {
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
   }
 
   &--emotions {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @tablet-width) {
@@ -304,8 +327,8 @@
 }
 
 .form-feedback__achievements-item {
-  margin-bottom: 45px;
-  margin-left: 55px;
+  margin-bottom: 52px;
+  margin-left: 50px;
   position: relative;
   font-weight: 400;
   font-size: 18px;
@@ -317,7 +340,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 200px;
+    width: 210px;
     margin-bottom: 60px;
 
     &:nth-child(2),
@@ -334,6 +357,11 @@
 }
 
 .form-feedback__label-checkbox {
+  margin-left: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -362,7 +390,7 @@
 }
 
 .form-feedback__contacts-wrapper {
-  padding: 40px 0px 45px;
+  padding: 30px 0 45px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -376,7 +404,7 @@
 }
 
 .form-feedback__platform-wrapper {
-  padding: 40px 20px;
+  padding: 40px 20px 10px;
   background-color: @grey;
   margin-right: -20px;
   margin-left: -20px;
@@ -395,9 +423,12 @@
     width: 435px;
   }
 }
+.form-feedback__list-platform {
+  list-style: none;
+}
 
 .form-feedback__platform-item {
-  margin-bottom: 35px;
+  margin-bottom: 47px;
   margin-left: 55px;
   position: relative;
   font-weight: 400;
@@ -415,6 +446,11 @@
 }
 
 .form-feedback__label-radio {
+  margin-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -456,7 +492,7 @@
 
 .form-feedback__emotions-wrapper {
   background-color: @white;
-  padding: 40px 0px 50px;
+  padding: 37px 0 35px;
 
   @media (min-width: @tablet-width) {
     order: 4;
@@ -470,7 +506,7 @@
 }
 
 .form-feedback__textarea {
-  min-height: 200px;
+  min-height: 195px;
   width: 275px;
   border: 2px solid @light-grey;
 
@@ -482,40 +518,44 @@
     min-width: 230px;
     width: auto;
     height: 45px;
-    padding: 20px;
+    padding: 10px 20px;
   }
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    min-height: 195px;
+    min-height: 185px;
     width: 495px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 130px;
+    min-height: 120px;
     width: 815px;
   }
 }
 
 .form-feedback__submit-wrapper {
-  padding: 5px 0px 25px;
+  padding: 5px 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     order: 5;
-    margin-bottom: 0 auto 50px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 
 .form-feedback__button {
-  margin: 0 auto 45px;
+  margin: 0 auto 35px;
   text-align: center;
   color: @white;
   font-weight: 700;
@@ -524,7 +564,7 @@
   background-color: @green;
   border: 2px solid @green;
   border-radius: 3px;
-  width: 275px;
+  width: 276px;
   height: 60px;
   box-sizing: border-box;
 
@@ -579,4 +619,5 @@
 
 .form-feedback__asterix {
   color: @pink;
+  margin-right: 5px;
 }
