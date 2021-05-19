@@ -4,6 +4,20 @@
   box-sizing: border-box;
   box-shadow: 0 7px 15px @modal-shadow;
   border-radius: 1px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  &--failure {
+    display: block;
+  }
+
+  &--success-show {
+    display: block;
+  }
 
   @media (min-width: @tablet-width) {
     width: 460px;
@@ -13,6 +27,7 @@
     width: 780px;
   }
 }
+
 
 .modal-form__top-success {
   background-color: @white;
@@ -91,6 +106,7 @@
 
 .modal-form__bottom-failure {
   padding: 25px 20px 50px;
+  background-color: @white;
 
   @media (min-width: @desktop-width) {
     background-color: @grey;
@@ -117,13 +133,13 @@
 
   &:hover,
   &:focus {
-    background-color: ;
+    background-color: @green-hover;
     outline: none;
   }
 
   &:active {
-    background-color:;
-    color:;
+    background-color: @green-hover;
+    color: @white-dark;
     outline: none;
   }
 
