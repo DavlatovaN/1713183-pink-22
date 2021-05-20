@@ -44,18 +44,19 @@
 
   &--wide {
     width: 100%;
+    max-width: 320px;
     height: 137px;
     text-decoration: none;
     position: relative;
     margin: 0 auto;
 
     @media (min-width: @tablet-width) {
-      width: 660px;
+      max-width: 660px;
       height: 509px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 1200px;
+      max-width: 1200px;
       height: 506px;
     }
 
