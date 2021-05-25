@@ -7,7 +7,9 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/152.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="./img/180.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -48,7 +50,8 @@
   </div>
   <div class="page-catalog__subtitle-wrapper">
     <div class="content-wrap">
-      <p class="page-catalog__promo">Взгляните на фотографии, которые выкладывают пользователи!<br class="tablet-hidden">Видите, как не хватает ваших?</p>
+      <p class="page-catalog__promo">Взгляните на фотографии, которые выкладывают пользователи!<br
+        class="tablet-hidden">Видите, как не хватает ваших?</p>
     </div>
   </div>
   <section class="gallery">
@@ -56,6 +59,9 @@
     <figure class="photo photo--wide">
       <a class="photo__link photo__link--wide" href="#" data-panorama-text="Панорама дня">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp, img/panorama-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp, img/panorama-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-tablet@2x.jpg 2x">
           <img class="photo__image photo__image--wide" src="img/panorama-m.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото с высокого моста">
@@ -66,18 +72,22 @@
           <b class="photo__author-name">Анна</b>
           <time class="photo__date" datetime="2021-03-22T14:00">(5 минут назад)</time>
         </p>
-        <p class="photo__text photo__text--wide">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="photo__text photo__text--wide">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+          трансляцию в перископе, задавайте свои вопросы!</p>
         <div class="photo__likes photo__likes--wide">
           <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
           <span class="photo__like-count">Нравится: 215</span>
         </div>
       </figcaption>
     </figure>
-<div class="content-wrap">
+    <div class="content-wrap">
       <div class="gallery__photo-wrapper">
         <figure class="gallery__photo photo">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото белой машины">
@@ -100,6 +110,9 @@
         <figure class="gallery__photo photo">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото барабанов">
@@ -122,6 +135,9 @@
         <figure class="gallery__photo photo">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото стеклянной крыши">
@@ -144,6 +160,9 @@
         <figure class="gallery__photo photo">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото ярмарки">
@@ -165,6 +184,9 @@
         </figure>
         <figure class="gallery__photo photo"><a class="photo__link" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-5-desktop.webp, img/photo-5-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp, img/photo-5-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg, img/photo-5-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg, img/photo-5-tablet@2x.jpg 2x">
             <img class="photo__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото ног на скале">
@@ -186,6 +208,9 @@
         </figure>
         <figure class="gallery__photo photo"><a class="photo__link" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-6-desktop.webp, img/photo-6-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp, img/photo-6-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg, img/photo-6-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg, img/photo-6-tablet@2x.jpg 2x">
             <img class="photo__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото крыло самолета">
@@ -208,7 +233,6 @@
       </div>
     </div>
   </section>
-
   <section class="photo-editor">
     <div class="photo-editor__editor-slogan">
       <div class="content-wrap">
@@ -269,8 +293,10 @@
               <div class="form-photo__filter form-photo__filter--bottom">
                 <div class="form-photo__icon-wrapper">
                   <svg class="form-photo__icon form-photo__icon--contrast" width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z" fill="#D22856"/>
-                    <path d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645" fill="#D22856"/>
+                    <path
+                      d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z" fill="#D22856"/>
+                    <path
+                      d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645" fill="#D22856"/>
                   </svg>
                 </div>
                 <div class="form-photo__filter-range">
@@ -294,10 +320,8 @@
   <div class="content-wrap">
     <div class="page-footer__content-wrapper">
       <a class="footer-logo" aria-label="Логотип сайта Pink">
-        <img class="footer-logo__image footer-logo__image--mobile" src="img/logotype-tablet.svg" width="145" height="40"
-             alt="Логотип-таблица">
-        <img class="footer-logo__image footer-logo__image--desktop" src="img/logotype-blue-desktop.svg" width="147"
-             height="40" alt="Логотип-декстоп">
+        <img class="footer-logo__image footer-logo__image--mobile" src="img/logotype-tablet.svg" width="145" height="40" alt="Логотип-таблица">
+        <img class="footer-logo__image footer-logo__image--desktop" src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Логотип-декстоп">
       </a>
       <ul class="social-button">
         <li class="social-button__item">

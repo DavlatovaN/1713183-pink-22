@@ -7,38 +7,46 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/152.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="./img/180.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
 <header class="page-header">
   <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="Основное меню">
-  <div class="main-nav__logo-wrap">
-    <a class="header-logo" aria-label="Логотип сайта Pink" href="index.html">
-      <img class="header-logo__image header-logo__image--mobile" src="img/pink.svg" width="74" height="23" alt="Лого">
-      <img class="header-logo__image header-logo__image--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Лого-таблица">
-      <img class="header-logo__image header-logo__image--desktop" width="147" height="40" src="img/logotype-white-desktop.svg" alt="Лого-десктоп">
-    </a>
-    <button class="main-nav__toggle" type="button">
-      <span class="main-nav__span"></span>
-    </button>
-  </div>
-      <ul class="main-nav__list">
-        <li class="main-nav__item ">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-nav__logo-wrap">
+      <a class="header-logo" aria-label="Логотип сайта Pink">
+        <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
+          <use xlink:href="img/sprite.svg#pink-mobile"></use>
+        </svg>
+        <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
+          <use xlink:href="img/sprite.svg#logotype-white-tablet"></use>
+        </svg>
+        <svg class="header-logo__image header-logo__image--desktop" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logotype-white-desktop"></use>
+        </svg>
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="main-nav__span"></span>
+      </button>
+    </div>
+    <ul class="main-nav__list">
+      <li class="main-nav__item ">
+        <a class="main-nav__link main-nav__link--active">Главная</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="catalog.html">Фотографии</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="form.html">Конкурс</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="page-main">
   <section class="page-main__store store">
@@ -47,8 +55,11 @@
       <div class="store__wrap-store">
         <div class="store__welcome-img">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/img-title-desktop.png 1x, img/img-title-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/img-title-tablet.png 1x, img/img-title-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/img-title-desktop.webp, img/img-title-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/img-title-tablet.webp, img/img-title-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/img-title-mobile.webp 1x, img/img-title-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/img-title-desktop.png, img/img-title-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/img-title-tablet.png, img/img-title-tablet@2x.png 2x">
             <img class="store__img" src="img/img-title-mobile.png" srcset="img/img-title-mobile@2x.png 2x" alt="Изображение телефона с розовой заставкой в руке">
           </picture>
         </div>
@@ -58,17 +69,23 @@
           <ul class="store__list">
             <li class="store__item">
               <a class="store__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="iOS">
-                <img src="img/apple-logo.svg" width="47" height="56" alt="Эпл"/>
+                <svg width="47" height="56">
+                  <use xlink:href="img/sprite.svg#apple-logo"></use>
+                </svg>
               </a>
             </li>
             <li class="store__item">
               <a class="store__link" href="https://play.google.com/store" aria-label="Android">
-                <img src="img/android-logo.svg" width="43" height="47" alt="Андроид">
+                <svg width="43" height="47">
+                  <use xlink:href="img/sprite.svg#android-logo"></use>
+                </svg>
               </a>
             </li>
             <li class="store__item">
               <a class="store__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Windows">
-                <img src="img/microsoft-logo.svg" width="44" height="41" alt="Майкрософт">
+                <svg width="44" height="41">
+                  <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -77,7 +94,6 @@
       </div>
     </div>
   </section>
-
   <section class="page-main__container container">
     <div class="container__titles">
       <div class="content-wrap">
@@ -98,6 +114,9 @@
               </div>
               <div class="features__item-img-box features__item-img-box--first">
                 <picture class="features__picture features__picture--first">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-desktop-1.webp, img/iphone-desktop-1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-tablet-3.webp, img/iphone-tablet-3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone-mobile-3.webp 1x, img/iphone-mobile-3@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-desktop-1.png, img/iphone-desktop-1@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/iphone-tablet-3.png, img/iphone-tablet-3@2x.png 2x">
                   <img class="features__item-img" src="img/iphone-mobile-3.png" srcset="img/iphone-mobile-3@2x.png 2x" alt="телефон с серой заставкой"></picture>
@@ -109,21 +128,27 @@
               <div class="features__item-img-box features__item-img-box--second">
                 <picture class="features__picture features__picture--second">
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-desktop-2.webp, img/iphone-desktop-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-tablet-2.webp, img/iphone-tablet-2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone-mobile-2.webp 1x, img/iphone-mobile-2@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-desktop-2.png, img/iphone-desktop-2@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/iphone-tablet-2.png, img/iphone-tablet-2@2x.png 2x">
-                  <img class="features__item-img" src="img/iphone-mobile-2.png" srcset="img/iphone-mobile-2@2x.png 2x" alt="телефон с розовой заставкой"></picture>
+                  <img class="features__item-img" src="img/iphone-mobile-2.png" srcset="img/iphone-mobile-2@2x.png 2x" alt="телефон с розовой заставкой">
+                </picture>
               </div>
             </li>
             <li class="features__item features__item--third">
               <div class="features__item-text-wrap"><h3 class="features__item-title">Заводит новых друзей</h3>
-                <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p></div>
+                <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
               <div class="features__item-img-box features__item-img-box--third">
                 <picture class="features__picture features__picture--third">
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-desktop-3.webp, img/iphone-desktop-3@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-tablet.webp, img/iphone-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone-mobile.webp 1x, img/iphone-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone-desktop-3.png, img/iphone-desktop-3@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/iphone-tablet.png, img/iphone-tablet@2x.png 2x">
-                  <img class="features__item-img" src="img/iphone-mobile.png" srcset="img/iphone-mobile@2x.png 2x" alt="телефон с розовой заставкой и смайлом"></picture>
+                  <img class="features__item-img" src="img/iphone-mobile.png" srcset="img/iphone-mobile@2x.png 2x" alt="телефон с розовой заставкой и смайлом">
+                </picture>
               </div>
             </li>
           </ul>
@@ -131,28 +156,34 @@
       </div>
     </section>
   </section>
-
   <section class="efficiency">
     <div class="content-wrap">
       <div class="efficiency__content-wrapper">
         <div class="efficiency__image"><span class="efficiency__image-text">24</span></div>
         <div class="efficiency__description"><h2 class="efficiency__title">Эффект<br class="efficiency__title--hidden">на 24 часа!</h2>
-          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p><a class="efficiency__link" href="#">Узнать больше об исследовании</a></div>
+          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </div>
   </section>
-
   <section class="slider-reviews content-wrap"><h2 class="visually-hidden">Отзывы</h2>
     <div class="slider-reviews__slide slider-reviews__slide--current slide">
-      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+        серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+      </blockquote>
       <p class="slide__author">Николай Петров</p>
       <p class="slide__author-description">25 лет, водитель трамвая</p></div>
     <div class="slider-reviews__slide slide">
-      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+        серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+      </blockquote>
       <p class="slide__author">Николай Петров</p>
       <p class="slide__author-description">25 лет, водитель трамвая</p></div>
     <div class="slider-reviews__slide slide">
-      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+        серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+      </blockquote>
       <p class="slide__author">Николай Петров</p>
       <p class="slide__author-description">25 лет, водитель трамвая</p></div>
     <div class="slider-reviews__controls controls">
@@ -276,27 +307,27 @@
   </section>
   <section class="connection">
     <div class="content-wrap">
-    <h2 class="visually-hidden">Контакты</h2>
-    <p class="connection__title">Остались вопросы?</p>
-    <p class="connection__title">Свяжитесь с нами!</p>
-    <ul class="connection__contacts-list contacts-list">
-      <li class="contacts-list__item">
-        <p class="contacts-list__item-title">Звоните:</p>
-        <p class="contacts-list__item-description">
-          <a class="contacts-list__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-      </li>
-      <li class="contacts-list__item">
-        <p class="contacts-list__item-title">Пишите:</p>
-        <p class="contacts-list__item-description">
-          <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-      </li>
-      <li class="contacts-list__item">
-        <p class="contacts-list__item-title">Приезжайте в гости:</p>
-        <address class="contacts-list__item-address">ул. Большая Конюшенная, 19/8</address>
-      </li>
-    </ul>
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="connection__title">Остались вопросы?</p>
+      <p class="connection__title">Свяжитесь с нами!</p>
+      <ul class="connection__contacts-list contacts-list">
+        <li class="contacts-list__item">
+          <p class="contacts-list__item-title">Звоните:</p>
+          <p class="contacts-list__item-description">
+            <a class="contacts-list__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+        </li>
+        <li class="contacts-list__item">
+          <p class="contacts-list__item-title">Пишите:</p>
+          <p class="contacts-list__item-description">
+            <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+        </li>
+        <li class="contacts-list__item">
+          <p class="contacts-list__item-title">Приезжайте в гости:</p>
+          <address class="contacts-list__item-address">ул. Большая Конюшенная, 19/8</address>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -304,8 +335,7 @@
     <h2 class="visually-hidden">Как до нас добраться?</h2>
     <noscript>
       <picture>
-        <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 660px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.jpg 2x">
         <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
@@ -324,8 +354,8 @@
   <div class="content-wrap">
     <div class="page-footer__content-wrapper">
       <a class="footer-logo" aria-label="Логотип сайта Pink">
-        <img class="footer-logo__image footer-logo__image--mobile"src="img/logotype-tablet.svg" width="145" height="40" alt="Логотип-таблица">
-        <img class="footer-logo__image footer-logo__image--desktop"src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Логотип-декстоп">
+        <img class="footer-logo__image footer-logo__image--mobile" src="img/logotype-tablet.svg" width="145" height="40" alt="Логотип-таблица">
+        <img class="footer-logo__image footer-logo__image--desktop" src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Логотип-декстоп">
       </a>
       <ul class="social-button">
         <li class="social-button__item">
@@ -346,8 +376,10 @@
       </ul>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="Логотип HTML Academy">
-          <img class="page-footer__copyright-icon" src="img/html-academy.svg" width="27" height="34" alt="Академия">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+          <svg class="page-footer__copyright-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
