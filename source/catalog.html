@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
@@ -18,9 +18,15 @@
   <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="Основное меню">
     <div class="main-nav__logo-wrap">
       <a class="header-logo" aria-label="Логотип сайта Pink" href="index.html">
-        <img class="header-logo__image header-logo__image--mobile" src="img/pink.svg" width="74" height="23" alt="Лого">
-        <img class="header-logo__image header-logo__image--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Лого-таблица">
-        <img class="header-logo__image header-logo__image--desktop" width="147" height="40" src="img/logotype-white-desktop.svg" alt="Лого-десктоп">
+        <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
+          <use xlink:href="img/sprite.svg#pink-mobile"></use>
+        </svg>
+        <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
+          <use xlink:href="img/sprite.svg#logotype-white-tablet"></use>
+        </svg>
+        <svg class="header-logo__image header-logo__image--desktop" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logotype-white-desktop"></use>
+        </svg>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="main-nav__span"></span>
@@ -342,13 +348,15 @@
       </ul>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="Логотип HTML Academy">
-          <img class="page-footer__copyright-icon" src="img/html-academy.svg" width="27" height="34" alt="Академия">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+          <svg class="page-footer__copyright-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </div>
 </footer>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

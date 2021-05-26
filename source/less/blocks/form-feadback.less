@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
   }
+
   @media (min-width: @desktop-width) {
     .content-wrap();
     flex-flow: row wrap;
@@ -68,6 +69,7 @@
     @media (min-width: @mobile-width) {
       .content-wrap();
     }
+
     @media (min-width: @tablet-width) {
       padding: 43px 58px 28px;
     }
@@ -246,6 +248,7 @@
     margin-left: 0;
     margin-right: 0;
   }
+
   @media (min-width: @tablet-width) {
     order: 3;
     padding: 0;
@@ -520,7 +523,6 @@
 }
 
 .form-feedback__radio {
-
   &:checked + label::after {
     content: "";
     position: absolute;
