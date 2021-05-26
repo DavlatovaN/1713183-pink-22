@@ -23,8 +23,12 @@
   list-style: none;
   padding: 82px 0 0;
 
+  @media (min-width: @mobile-width) {
+    padding: 68px 0 0;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 74px 0 42px 310px;
+    padding: 63px 0 42px 310px;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,7 +105,7 @@
     position: relative;
     background-color: @grey;
     z-index: 10;
-    padding: 55px 30px 0;
+    padding: 44px 30px 0;
   }
 }
 

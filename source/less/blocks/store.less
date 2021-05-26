@@ -101,7 +101,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto 35px;
+    margin: 5px auto 35px;
     line-height: 68px;
     text-align: center;
     font-size: 50px;
@@ -150,8 +150,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   list-style: none;
+
+  @media (min-width: @mobile-width) {
+    padding: 0;
+    margin: 0 auto 17px;
+    width: 87%;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 25px;
@@ -164,6 +170,10 @@
 
 .store__item {
   margin: 0 18px;
+
+  @media (min-width: @mobile-width) {
+    margin: 0;
+  }
 
   &:last-child {
     margin-top: 7px;

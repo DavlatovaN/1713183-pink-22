@@ -54,6 +54,10 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 260px;
+
+  @media (min-width: @mobile-width) {
+    max-width: none;
+  }
 }
 
 .contacts-list__item-link {
